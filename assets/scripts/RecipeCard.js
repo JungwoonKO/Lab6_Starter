@@ -129,8 +129,8 @@ class RecipeCard extends HTMLElement {
     //           cardTemplate.html and the data passed in (You should only have one <article>,
     //           do not nest an <article> inside another <article>). You should use Template
     //           literals (tempalte strings) and element.innerHTML for this.
-    console.log(data.imgsrc);
-    arti.innerHTML = `  <img src="` + data.imgsrc +`"
+    console.log(data.imgSrc);
+    arti.innerHTML = `  <img src="` + data.imgSrc +`"
     alt="` + data.imgAlt + `">
   <p class="title">
     <a href="` + data.titleLnk + `">` + data.titleTxt + `</a>
