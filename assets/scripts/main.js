@@ -78,13 +78,13 @@ function initFormHandler() {
   // Steps B4-B9 will occur inside the event listener from step B3
   function addItem (event) {
   // B4. TODO - Create a new FormData object from the <form> element reference above
-    event.preventDefault();
+    //event.preventDefault();
     const formData = new FormData (form);
   // B5. TODO - Create an empty object (I'll refer to this object as recipeObject to
   //            make this easier to read), and then extract the keys and corresponding
   //            values from the FormData object and insert them into recipeObjec
     let recipeObject = {
-      "imgsrc": formData.get('imgSrc'),
+      "imgSrc": formData.get('imgSrc'),
       "imgAlt": formData.get('imgAlt'),
       "titleTxt": formData.get('titleTxt'),
       "titleLnk": formData.get('titleLnk'),
@@ -116,7 +116,7 @@ function initFormHandler() {
   // Steps B12 & B13 will occur inside the event listener from step B11
   function clean(event) {
   // B12. TODO - Clear the local storage
-    event.preventDefault();
+    //event.preventDefault();
     localStorage.clear();
   // B13. TODO - Delete the contents of <main>
     const getMain = document.querySelector('main');
